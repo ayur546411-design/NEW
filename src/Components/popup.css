@@ -1,0 +1,10 @@
+.admission-popup { position: fixed; right: 16px; bottom: 18px; z-index: 3000; }
+.popup-card { background: #fff; padding: 12px 14px; border-radius: 12px; box-shadow: 0 10px 30px rgba(2,6,23,0.12); display:flex; gap:12px; align-items:center; min-width:260px }
+.popup-body h4 { margin:0 0 4px; font-size:16px }
+.popup-body p { margin:0; font-size:13px; color:var(--text-muted) }
+.popup-actions { display:flex; gap:8px; margin-left:auto }
+
+@media (max-width:600px){
+  .admission-popup{ left:12px; right:12px; bottom:12px }
+  .popup-card{ width:100%; box-sizing:border-box }
+}

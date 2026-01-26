@@ -4,6 +4,7 @@ import siteData from '../data/siteData'
 import AdmissionProcess from '../components/AdmissionProcess'
 import '../styles/admission.css'
 import Loader from '../Components/Common/Loader'
+import MicrosoftFormEmbed from '../components/MicrosoftFormEmbed'
 
 export default function Admission() {
   const [loading, setLoading] = useState(true)
@@ -116,6 +117,15 @@ export default function Admission() {
           <a href="/contact" className="btn btn-primary">
             Contact Admission Office
           </a>
+        </div>
+      </section>
+
+      {/* EMBED MICROSOFT FORM - replace formSrc with your Forms embed src */}
+      <section className="content-full full-bleed">
+        <div className="container">
+          <SectionTitle eyebrow="Apply" title="Admission Enquiry Form" />
+          <MicrosoftFormEmbed formSrc={""} height={850} />
+          <p className="muted">Tip: Create the form from inside the workbook (Excel Web → Insert → Forms) so responses append to the same file.</p>
         </div>
       </section>
 

@@ -9,6 +9,7 @@ import sonamImage from '../assets/facultyimg/22.jpeg';
 
 
 
+
 const siteData = {
   school: {
     name: 'Global Model Public School',
@@ -33,8 +34,7 @@ const siteData = {
     { name: 'Akanksha Raj', role: 'Teacher', qual: 'BSc Mathematics', image: akankshaImage },
     { name: 'Kajal Kumari', role: 'Teacher', qual: 'BSc Biology', image: kajalImage },
     { name: 'Sonam Kumari', role: 'Teacher', qual: 'B.Ed (AU)', image: sonamImage },
-    { name: 'Banshika Gupta', role: 'Teacher', qual: 'B.Ed', image: banshikaImage },
-    { name: 'ABC', role: 'Teacher', qual: 'B.Ed', image: abcImage }
+    { name: 'Banshika Gupta', role: 'Teacher', qual: 'B.Ed', image: banshikaImage }
   ],
   subjects: ['English','Hindi','Sanskrit','Mathematics','Science','Social Science','Computer','GK','Spoken English'],
   activities: ['Spoken English','Yoga','Sports'],
@@ -51,6 +51,8 @@ const siteData = {
     'https://images.unsplash.com/photo-1601582584113-2d7c2b43a1a9?auto=format&fit=crop&w=1600&q=60',
     'https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=1600&q=60'
   ],
+  // Optional: set this to a deployed Google Apps Script web app URL to save enquiries to a Google Sheet
+  sheetEndpoint: 'https://script.google.com/macros/s/AKfycby1G8M8tI1fYuGb4Ly05Eo8WH8k0DZx9DAhWc8Mgn8D-UndeijlYoaKKx33ALGgWef-uA/exec',
   notices: [
   {
     id: 1,

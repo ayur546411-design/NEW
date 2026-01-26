@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react'
+import '../styles/contact.css'
 import siteData from '../data/siteData'
 import SectionTitle from '../Components/SectionTitle'
 import Loader from '../Components/Common/Loader'

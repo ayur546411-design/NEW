@@ -12,7 +12,7 @@ export default function HeroSection(){
         <p className="hero-sub">A premium learning experience — {s.type} • Session {s.session}</p>
         <div className="hero-cta">
           <a className="btn btn-ghost" href="/admission">Admission Open: {s.admissionOpenDate}</a>
-          <a className="btn btn-primary" href="/contact">Enquire Now</a>
+          <a className="btn btn-primary" href="https://docs.google.com/forms/d/e/1FAIpQLSe1eoec2FqUo60Ma4tnsVejm6jGbwzWGCYwWP5hHlWBcK-1rw/viewform?usp=publish-editor" target="_blank" rel="noopener noreferrer">Enquire Now</a>
         </div>
       </div>
     </section>

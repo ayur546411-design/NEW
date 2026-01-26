@@ -1,0 +1,36 @@
+/* Responsive Contact page styles */
+.contact-page .contact-grid.two-column {
+  display: flex;
+  gap: 28px;
+  align-items: flex-start;
+}
+
+.contact-page .contact-card { flex: 1 1 420px; }
+.contact-page .map-card  { flex: 1 1 520px; display:flex; align-items:stretch }
+
+.contact-card .contact-row { display:flex; gap:20px; justify-content:space-between }
+.contact-card .contact-row > div { flex:1 }
+
+.map-embed { width:100%; height:100%; border-radius:14px; overflow:hidden; }
+.map-embed iframe { width:100%; height:100%; border:0; min-height:380px; display:block }
+
+.contact-form label { display:block; margin-bottom:12px }
+.contact-form input, .contact-form textarea { width:100%; padding:10px 12px; border-radius:8px; border:1px solid rgba(0,0,0,0.08); font-size:14px }
+.contact-form button { display:inline-block; padding:10px 22px }
+
+/* Enquiry section */
+.enquiry { margin-top:18px }
+
+/* Mobile / tablet adjustments */
+@media (max-width: 900px) {
+  .contact-page .contact-grid.two-column { flex-direction: column; }
+  .contact-card .contact-row { display:block }
+  .map-embed iframe { min-height:240px }
+  .contact-card, .map-card { width:100% }
+}
+
+@media (max-width: 480px) {
+  .contact-card { padding:18px }
+  .map-embed iframe { min-height:200px }
+  .contact-form input, .contact-form textarea { font-size:13px }
+}

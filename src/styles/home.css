@@ -58,7 +58,7 @@
   justify-content: space-between;
   min-height: 60vh;
   padding: 40px 20px;
-  border-radius: 28px;
+  border-radius: 0 !important;
   background: var(--primary-orange);
   background-size: cover;
   background-position: center;
@@ -157,10 +157,64 @@
 .admission-cta .cta-text p { margin:0; color:var(--text-muted) }
 .admission-cta .cta-actions { display:flex; gap:12px }
 
+/* Make CTA buttons in the admission section uniform size */
+.admission-cta .cta-actions .btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 160px;
+  padding: 10px 18px;
+  height: 44px;
+  box-sizing: border-box;
+}
+.admission-cta .cta-actions .btn.btn-ghost { padding: 10px 18px; }
+
+@media (max-width: 600px) {
+  .admission-cta .cta-actions { flex-direction: column; gap:10px }
+  .admission-cta .cta-actions .btn { width: 100%; min-width: auto }
+}
+
 /* Contact CTA styles */
 .contact-cta { display:flex; align-items:center; justify-content:space-between; gap:18px; padding:18px 0; }
 .contact-cta .contact-info h3 { margin:0 0 6px }
 .contact-cta .contact-info .muted { margin:0 0 6px; color:var(--text-muted) }
+
+/* Gallery auto-scrolling slider */
+.gallery-slider { overflow: hidden; margin: 8px 0 20px; }
+.slider-track { display: flex; gap: 12px; width: max-content; align-items: center; animation: slider-scroll 20s linear infinite; }
+.slider-item { flex: 0 0 auto; width: 220px; height: 140px; border-radius: 12px; overflow: hidden; box-shadow: 0 8px 24px rgba(2,6,23,0.06); }
+.slider-item img { width:100%; height:100%; object-fit:cover; display:block }
+
+@keyframes slider-scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* Slow down on hover for better UX */
+.gallery-slider:hover .slider-track { animation-play-state: paused }
+
+/* Modal styles for admission enquiry */
+.modal-backdrop { position:fixed; inset:0; background:rgba(0,0,0,0.45); display:flex; align-items:center; justify-content:center; z-index:2000 }
+.modal-card { background:#fff; padding:20px; border-radius:12px; width:min(760px,92%); box-shadow:0 20px 60px rgba(2,6,23,0.18); }
+.modal-card h3 { margin-top:0 }
+.admission-form { display:flex; flex-direction:column; gap:10px }
+.admission-form label { display:flex; flex-direction:column; font-weight:600; font-size:13px }
+.admission-form input, .admission-form textarea { padding:10px 12px; border-radius:8px; border:1px solid rgba(32,41,54,0.08); width:100%; box-sizing:border-box }
+.modal-card { max-height: calc(100vh - 120px); overflow-y: auto; }
+
+/* Keep action buttons visible on large and small screens */
+.form-actions { display:flex; gap:10px; justify-content:flex-end; margin-top:8px; position:sticky; bottom:0; background:linear-gradient(180deg, rgba(255,255,255,0), #fff 60%); padding-top:10px; padding-bottom:6px }
+.form-actions .btn { min-width:110px }
+.admission-form textarea { resize:vertical }
+
+@media (max-width: 600px) {
+  .modal-card { width: 94%; padding:16px }
+}
+
+@media (max-width: 900px) {
+  .modal-card { width: 96%; }
+  .form-actions { padding: 10px 6px; }
+}
 .contact-cta .contact-actions { display:flex; gap:10px }
 
 /* Responsive: stack CTAs on smaller screens */
