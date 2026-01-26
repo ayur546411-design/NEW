@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import './nav.css'
-import logo from '../assets/images/Logo.png'
+import logo from '../assets/images/logo.png'
 import { useAuth } from '../context/AuthContext'
 
 export default function Navbar() {
