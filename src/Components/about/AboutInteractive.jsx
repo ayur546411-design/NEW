@@ -24,7 +24,7 @@ export default function AboutInteractive() {
               <>
                 <p><strong>Vision</strong></p>
                 <p>
-                  BHARTIYAM VIDYA NIKETAN is widely recognised as a leading
+                  Global Model Public School is widely recognised as a leading
                   educational institution in India, nurturing global-minded,
                   academically successful and well-balanced learners.
                 </p>
@@ -49,9 +49,9 @@ export default function AboutInteractive() {
           >
             <h3>Our Inspiration & Founder</h3>
             {active === 'founder' && (
-              <p>
+                <p>
                 Inspired by Indian values and global vision, the foundation of
-                Bhartiyam Vidya Niketan was laid to create disciplined,
+                Global Model Public School was laid to create disciplined,
                 confident and compassionate leaders of tomorrow.
               </p>
             )}
@@ -69,7 +69,7 @@ export default function AboutInteractive() {
             {active === 'principal' && (
               <p>
                 “I see it, I get it and I can do it!”  
-                BVN is a place where students grow academically, socially
+                Global Model Public School is a place where students grow academically, socially
                 and morally, prepared to face life with confidence.
               </p>
             )}
