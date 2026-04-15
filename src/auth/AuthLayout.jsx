@@ -7,7 +7,7 @@ export default function AuthLayout({ title, children }) {
       <div className="auth-wrapper">
         <aside className="auth-side">
           <div className="auth-brand">
-            <h2>Global Model Public School</h2>
+            <h2>Saraswati Vidya Mandir School</h2>
             <p className="muted">A caring, values-driven education — Nursery to Grade 8</p>
           </div>
           <div className="auth-illustration" aria-hidden />

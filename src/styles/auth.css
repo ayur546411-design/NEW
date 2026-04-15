@@ -7,7 +7,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(180deg, #f6fbfc 0%, #e9f7f7 60%);
+  background: linear-gradient(180deg, #f6faff 0%, #eef5fc 60%);
   padding: 28px;
 }
 
@@ -53,7 +53,7 @@
 
 /* Buttons */
 .auth-card .btn-primary {
-  background: linear-gradient(90deg, var(--primary-teal), #3aa7a7);
+  background: linear-gradient(90deg, var(--primary-teal), #1d4d8a);
   color: #fff;
   font-weight: 700;
   border-radius: 10px;
@@ -61,7 +61,7 @@
   margin-top: 12px;
   width: 100%;
   transition: transform 0.12s ease, box-shadow 0.18s ease;
-  box-shadow: 0 10px 30px rgba(58,167,167,0.12);
+  box-shadow: 0 10px 30px rgba(18,59,102,0.12);
   border: none;
 }
 
@@ -70,7 +70,7 @@
 }
 
 .auth-card .btn-primary:hover {
-  box-shadow: 0 14px 40px rgba(58,167,167,0.16);
+  box-shadow: 0 14px 40px rgba(18,59,102,0.16);
 }
 
 /* Titles */
@@ -108,11 +108,11 @@
   transition: background 0.14s ease, border-color 0.14s ease, box-shadow 0.14s ease;
 }
 .inline input[type="checkbox"]:focus {
-  box-shadow: 0 4px 12px rgba(47,155,155,0.12);
+  box-shadow: 0 4px 12px rgba(18,59,102,0.12);
   outline: none;
 }
 .inline input[type="checkbox"]:checked {
-  background: linear-gradient(90deg, var(--primary-teal), #3aa7a7);
+  background: linear-gradient(90deg, var(--primary-teal), #1d4d8a);
   border-color: transparent;
 }
 .inline input[type="checkbox"]::after{
@@ -135,7 +135,7 @@
 
 /* Links */
 .auth-card .auth-links { margin-top: 16px; font-size: 14px }
-.auth-card .auth-links a { color: #2f9b9b; text-decoration: none; font-weight: 700 }
+.auth-card .auth-links a { color: #0c2745; text-decoration: none; font-weight: 700 }
 .auth-card .auth-links a:hover { text-decoration: underline }
 
 /* Optional: Small floating blobs for playful background */
@@ -144,7 +144,7 @@
   content: "";
   position: absolute;
   border-radius: 50%;
-  background: linear-gradient(135deg, rgba(47,155,155,0.08), rgba(47,155,155,0.03));
+  background: linear-gradient(135deg, rgba(18,59,102,0.08), rgba(18,59,102,0.03));
 }
 
 .auth-card::before { width: 120px; height: 120px; top: -40px; right: -40px }
@@ -155,7 +155,7 @@
 .auth-wrapper { display:flex; gap:28px; align-items:stretch; max-width:1000px; width:100%; padding: 20px }
 .auth-side {
   flex:1;
-  background: linear-gradient(180deg, #1f7d7d 0%, #2fa6a6 100%);
+  background: linear-gradient(180deg, #0c2745 0%, #123b66 100%);
   border-radius:14px;
   padding:28px;
   color:#ffffff;

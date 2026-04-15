@@ -7,7 +7,7 @@ export default function Footer(){
     <footer className="site-footer">
       <div className="container footer-grid">
         <div>
-          <h3>Global Model Public School</h3>
+          <h3>Saraswati Vidya Mandir School</h3>
           <p>{s.address.replace(/\n/g,', ')}</p>
           <p>Email: {s.email}</p>
           <p>Phone: {s.phones.join(' / ')}</p>

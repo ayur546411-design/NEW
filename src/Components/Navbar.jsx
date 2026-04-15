@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import './nav.css'
-import logo from '../assets/images/logo.png'
 import { useAuth } from '../context/AuthContext'
 
 export default function Navbar() {
@@ -20,9 +19,9 @@ export default function Navbar() {
 
         {/* BRAND */}
         <Link to="/" className="brand">
-          <img src={logo} alt="logo" className="logo" />
+          <img src="/Logo.png" alt="logo" className="logo" />
           <div>
-            <h1 className="brand-title">Global Model Public School</h1>
+            <h1 className="brand-title">Saraswati Vidya Mandir School</h1>
             <p className="brand-sub">Established 2026</p>
           </div>
         </Link>

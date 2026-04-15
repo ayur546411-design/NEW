@@ -9,7 +9,7 @@ export default function AboutSection(){
   return (
     <section className="about container about-section">
       <div>
-        <SectionTitle eyebrow="About" title="About Our School">Global Model Public School was established in {s.established} with the mission to provide a modern, values-driven education to children from Nursery to 8th grade. We blend a bilingual curriculum with activity-based learning, strong pastoral care, and community engagement to build confident, compassionate learners.</SectionTitle>
+        <SectionTitle eyebrow="About" title="About Our School">Saraswati Vidya Mandir School was established in {s.established} with the mission to provide a modern, values-driven education to children from Nursery to 8th grade. We blend a bilingual curriculum with activity-based learning, strong pastoral care, and community engagement to build confident, compassionate learners.</SectionTitle>
 
         <div className="vmv-box">
           <div className="vmv-inner">

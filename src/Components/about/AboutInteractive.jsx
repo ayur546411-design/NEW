@@ -24,7 +24,7 @@ export default function AboutInteractive() {
               <>
                 <p><strong>Vision</strong></p>
                 <p>
-                  Global Model Public School is widely recognised as a leading
+                  Saraswati Vidya Mandir School is widely recognised as a leading
                   educational institution in India, nurturing global-minded,
                   academically successful and well-balanced learners.
                 </p>
@@ -51,7 +51,7 @@ export default function AboutInteractive() {
             {active === 'founder' && (
                 <p>
                 Inspired by Indian values and global vision, the foundation of
-                Global Model Public School was laid to create disciplined,
+                Saraswati Vidya Mandir School was laid to create disciplined,
                 confident and compassionate leaders of tomorrow.
               </p>
             )}
@@ -69,7 +69,7 @@ export default function AboutInteractive() {
             {active === 'principal' && (
               <p>
                 “I see it, I get it and I can do it!”  
-                Global Model Public School is a place where students grow academically, socially
+                Saraswati Vidya Mandir School is a place where students grow academically, socially
                 and morally, prepared to face life with confidence.
               </p>
             )}

@@ -18,7 +18,7 @@ export default function About() {
       >
         <div className="hero-overlay">
           <div className="container hero-content">
-            <SectionTitle eyebrow="About Us" title="Global Model Public School">
+            <SectionTitle eyebrow="About Us" title="Saraswati Vidya Mandir School">
               Established in {s.established}, we are committed to nurturing
               academically strong, morally grounded and globally responsible
               learners.
@@ -46,7 +46,7 @@ export default function About() {
               </p>
 
               <p>
-                <strong>Global Model Public School</strong> is widely recognised as a
+                <strong>Saraswati Vidya Mandir School</strong> is widely recognised as a
                 leading educational institution in India. Our inspirational
                 faculty creates an environment that motivates students to be
                 global-minded, academically successful and well-balanced,

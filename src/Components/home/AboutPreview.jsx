@@ -8,7 +8,7 @@ export default function AboutPreview(){
   return (
     <div className="about-preview">
       <div className="about-preview__text">
-        <SectionTitle eyebrow="About" title="About Our School">Global Model Public School was established in {s.established} with the mission to provide a modern, values-driven education to children from Nursery to 8th grade. We blend a bilingual curriculum with activity-based learning, strong pastoral care, and community engagement to build confident, compassionate learners.</SectionTitle>
+        <SectionTitle eyebrow="About" title="About Our School">Saraswati Vidya Mandir School was established in {s.established} with the mission to provide a modern, values-driven education to children from Nursery to 8th grade. We blend a bilingual curriculum with activity-based learning, strong pastoral care, and community engagement to build confident, compassionate learners.</SectionTitle>
         <p className="lead">We emphasise foundational skills, inquiry-led science and mathematics, reading and language development, and socio-emotional learning. Classrooms are safe, well-resourced and led by qualified teachers.</p>
         <div className="card more-content">
           <div className={open ? 'more-inner open' : 'more-inner collapsed'} aria-expanded={open}>

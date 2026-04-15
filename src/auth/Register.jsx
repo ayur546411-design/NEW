@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
+import { useAuth } from '../context/AuthContext'
 import AuthLayout from './AuthLayout'
 
 export default function Register() {
@@ -8,16 +9,48 @@ export default function Register() {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const [agree, setAgree] = useState(false)
+  const [error, setError] = useState('')
+  const [loading, setLoading] = useState(false)
+  const navigate = useNavigate()
+  const { login } = useAuth()
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault()
-    // TODO: wire up registration
-    alert('Account created (demo)')
+    setError('')
+    setLoading(true)
+    
+    try {
+      const response = await fetch('http://localhost:5000/api/auth/register', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ name, email, password, role }),
+      });
+      
+      const data = await response.json();
+      
+      if (!response.ok) {
+        throw new Error(data.message || 'Registration failed');
+      }
+      
+      // On success, auto-login or redirect to login
+      login(data);
+      if (data.role === 'admin') navigate('/admin');
+      else if (data.role === 'student') navigate('/student');
+      else navigate('/');
+      
+    } catch (err) {
+      setError(err.message);
+    } finally {
+      setLoading(false);
+    }
   }
 
   return (
     <AuthLayout title="Create an Account">
       <p className="auth-sub">Register to access student/parent features. Use a valid email.</p>
+      {error && <div style={{ color: 'red', marginBottom: '10px' }}>{error}</div>}
 
       <form className="auth-form" onSubmit={handleSubmit}>
         <label className="form-label">
@@ -47,7 +80,9 @@ export default function Register() {
           <input type="checkbox" checked={agree} onChange={e=>setAgree(e.target.checked)} /> I agree to the <Link to="/terms">Terms</Link>
         </label>
 
-        <button className="btn btn-primary" type="submit" disabled={!agree}>Create Account</button>
+        <button className="btn btn-primary" type="submit" disabled={!agree || loading}>
+          {loading ? 'Creating...' : 'Create Account'}
+        </button>
       </form>
 
       <div className="auth-links">Already have an account? <Link to="/login">Sign in</Link></div>

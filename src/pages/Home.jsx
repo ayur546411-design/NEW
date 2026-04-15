@@ -35,7 +35,7 @@ export default function Home() {
       >
         <div className="container">
           <div className="hero-intro">
-            <h1 className="display">Global Model Public School</h1>
+            <h1 className="display">Saraswati Vidya Mandir School</h1>
             <p className="sub">
               Established 2026 • Nursery to 8th • English & Hindi Medium
             </p>

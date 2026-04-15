@@ -1,13 +1,13 @@
 :root {
-  --primary-orange: #f89e52;
-  --primary-teal: #5e969a;
-  --primary-gold: #fcd55b;
-  --bg-light: #fdf8f1;
-  --text-dark: #2d4756;
-  --text-muted: #5a6a75;
+  --primary-orange: #fcd55b;   /* Mapped to Gold */
+  --primary-teal: #123b66;     /* Mapped to Navy Blue */
+  --primary-gold: #e6b825;     /* Darker Gold */
+  --bg-light: #f4f7f9;         /* Cool light gray */
+  --text-dark: #102138;        /* Very dark Navy */
+  --text-muted: #51647a;
   --shadow-soft: rgba(0,0,0,0.08);
-  --shadow-orange: rgba(248, 158, 82, 0.3);
-  --shadow-teal: rgba(94, 150, 154, 0.2);
+  --shadow-orange: rgba(252, 213, 91, 0.3);
+  --shadow-teal: rgba(18, 59, 102, 0.2);
   /* Responsive breakpoints */
   --bp-sm: 600px;
   --bp-md: 900px;
@@ -42,7 +42,7 @@ html, body, #root, .app-root {
   transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   box-shadow: 0 4px 15px var(--shadow-orange);
 }
-.btn-primary { background: var(--primary-orange); color: #fff; }
+.btn-primary { background: var(--primary-orange); color: var(--primary-teal); }
 .btn-primary:hover { transform: scale(1.05); }
 .btn-secondary { background: var(--primary-teal); color: #fff; }
 .btn-secondary:hover { transform: scale(1.05); }

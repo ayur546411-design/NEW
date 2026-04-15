@@ -3,7 +3,7 @@ import kajalImage from '../assets/facultyimg/23.jpeg';
 import piyushImage from '../assets/facultyimg/24.jpeg';
 import akankshaImage from '../assets/facultyimg/25.jpeg';
 import abcImage from '../assets/facultyimg/26.jpeg';
-import sonamImage from '../assets/facultyimg/22.jpeg';
+import sonamImage from '../assets/facultyimg/27.jpeg';
 
 
 
@@ -12,7 +12,7 @@ import sonamImage from '../assets/facultyimg/22.jpeg';
 
 const siteData = {
   school: {
-    name: 'Global Model Public School',
+    name: 'Saraswati Vidya Mandir School',
     established: '2026',
     session: '2026–2027',
     type: 'Primary School',
