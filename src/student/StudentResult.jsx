@@ -8,7 +8,7 @@ export default function StudentResult() {
       </section>
 
       <section className="card">
-        <h3>🧮 Subject Wise Marks</h3>
+        <h3> Subject Wise Marks</h3>
 
         <table className="table">
           <thead>
